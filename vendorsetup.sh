@@ -38,10 +38,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export LC_ALL="C.UTF-8"
  	export ALLOW_MISSING_DEPENDENCIES=true
 
- 	#OFR build settings & info
-	export TARGET_DEVICE_ALT="rock,stone"
-	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
-	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
+    #OFR build settings & info
+    export TARGET_DEVICE_ALT="rock,stone"
+    export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
+    export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
     export FOX_VENDOR_BOOT_RECOVERY_FULL_REFLASH=1
     export FOX_VENDOR_BOOT_RECOVERY=1
     export FOX_DELETE_MAGISK_ADDON=1
@@ -60,7 +60,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_ENABLE_LPTOOLS=1
 
     #OTA
-	export FOX_AB_DEVICE=1
+    export FOX_AB_DEVICE=1
     export FOX_VIRTUAL_AB_DEVICE=1
     export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
 
